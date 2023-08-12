@@ -4,7 +4,7 @@ from urllib.parse import parse_qsl
 
 services = {
     1:{
-        'catrgory':'上衣',
+        'category':'上衣',
         'img_url':'https://i.imgur.com/Hps1uIM.jpg',
         'title':'上衣,洋裝,小可愛',
         'duration': '90min',
@@ -14,7 +14,7 @@ services = {
 
     },
     2:{
-        'catrgory':'裙子',
+        'category':'裙子',
         'img_url':'https://i.imgur.com/tjMOSRH.jpg',
         'title':'上衣,洋裝,小可愛',
         'duration': '90min',
