@@ -7,6 +7,7 @@ services = {
         'catrgory':'上衣',
         'img_url':'https://i.imgur.com/Hps1uIM.jpg',
         'title':'上衣,洋裝,小可愛',
+        'duration': '90min',
         'description':'日韓系上衣',
         'price':1500,
         'post_url':'https://www.facebook.com/jewel5562956/?locale=zh_TW'
@@ -16,8 +17,9 @@ services = {
         'catrgory':'裙子',
         'img_url':'https://i.imgur.com/tjMOSRH.jpg',
         'title':'上衣,洋裝,小可愛',
+        'duration': '90min',
         'description':'日韓系上衣',
-        'price':1500,
+        'price':1300,
         'post_url':'https://www.facebook.com/jewel5562956/?locale=zh_TW'
 
     },
