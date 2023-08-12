@@ -11,9 +11,21 @@ services = {
         'description':'日韓系上衣',
         'price':1500,
         'post_url':'https://www.facebook.com/jewel5562956/?locale=zh_TW'
+    
 
     },
     2:{
+        'category':'上衣',
+        'img_url':'https://i.imgur.com/kA7awOA.jpg',
+        'title':'上衣,洋裝,小可愛',
+        'duration': '90min',
+        'description':'日韓系上衣',
+        'price':10,
+        'post_url':'https://www.facebook.com/jewel5562956/?locale=zh_TW'
+    
+
+    },
+    3:{
         'category':'裙子',
         'img_url':'https://i.imgur.com/tjMOSRH.jpg',
         'title':'上衣,洋裝,小可愛',
@@ -22,7 +34,7 @@ services = {
         'price':1300,
         'post_url':'https://www.facebook.com/jewel5562956/?locale=zh_TW'
 
-    },
+    }
 }
 
 def service_category_event(event):
