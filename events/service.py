@@ -5,7 +5,7 @@ from urllib.parse import parse_qsl
 services = {
     1:{
         'catrgory':'上衣',
-        'img_url':'https://imgur.com/kA7awOA',
+        'img_url':'https://i.imgur.com/Hps1uIM.jpg',
         'title':'上衣,洋裝,小可愛',
         'description':'日韓系上衣',
         'price':1500,
@@ -14,7 +14,7 @@ services = {
     },
     2:{
         'catrgory':'裙子',
-        'img_url':'https://imgur.com/tjMOSRH',
+        'img_url':'https://i.imgur.com/tjMOSRH.jpg',
         'title':'上衣,洋裝,小可愛',
         'description':'日韓系上衣',
         'price':1500,
@@ -29,7 +29,7 @@ def service_category_event(event):
         template=ImageCarouselTemplate(
             columns=[
                 ImageCarouselColumn(
-                    image_url='https://imgur.com/kA7awOA',
+                    image_url='https://i.imgur.com/Hps1uIM.jpg',
                     action=PostbackAction(
                         label='上衣',
                         display_text='想了解上衣',
@@ -37,7 +37,7 @@ def service_category_event(event):
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url='https://imgur.com/tjMOSRH',
+                    image_url='https://i.imgur.com/tjMOSRH.jpg',
                     action=PostbackAction(
                         label='裙子',
                         display_text='裙子',
