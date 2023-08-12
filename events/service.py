@@ -40,7 +40,7 @@ def service_category_event(event):
                     image_url='https://i.imgur.com/tjMOSRH.jpg',
                     action=PostbackAction(
                         label='裙子',
-                        display_text='裙子',
+                        display_text='想了解裙子',
                         data='action=service&category=裙子'
                     )
                 )
@@ -51,7 +51,7 @@ def service_category_event(event):
         event.reply_token,
         [image_carousel_template_message])
 
-def servicce_event(event):
+def service_event(event):
 
     data= dict(parse_qsl(event.postback.data))
 
