@@ -25,14 +25,14 @@ services = {
 
 def service_category_event(event):
     image_carousel_template_message = TemplateSendMessage(
-        alt_text='選擇了解分類',
+        alt_text='請選擇想服務類別',
         template=ImageCarouselTemplate(
-            colums=[
+            columns=[
                 ImageCarouselColumn(
                     image_url='https://12376876.imgur.com/all',
                     action=PostbackAction(
                         label='上衣',
-                        display_text='了解上衣款式',
+                        display_text='想了解上衣',
                         data='action=service&category=上衣'
                     )
                 ),
@@ -40,14 +40,16 @@ def service_category_event(event):
                     image_url='https://12376876.imgur.com/all',
                     action=PostbackAction(
                         label='裙子',
-                        display_text='了解裙子款式',
+                        display_text='裙子',
                         data='action=service&category=裙子'
-                    )    
+                    )
                 )
             ]
         )
     )
-
+    line_bot_api.reply_message(
+        event.reply_token,
+        [image_carousel_template_message])
 
 def servicce_event(event):
 
