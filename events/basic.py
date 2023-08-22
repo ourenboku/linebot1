@@ -16,19 +16,20 @@ def about_us_event(event):
     ]
 
     text_message = TextSendMessage(text='''$ 寶石服飾 $
+唯美 氣質 清新 時尚 女孩們是待琢磨的寶石 舒適自在的購物空間 嚴選材質期待與妳的美麗邂逅~
 
--嚴格把關：所有用品皆有嚴格把關
+-女孩們是待琢磨的寶石。
 
--可以試穿:來店皆可試穿衣物
-                                   
-。''', emojis=emoji)
+-舒適自在的購物空間。
+
+-嚴選材質期待與妳的美麗邂逅~。''', emojis=emoji)
 
     sticker_message = StickerSendMessage(
         package_id='8522',
         sticker_id='16581271'
     )
 
-    about_us_img = 'https://i.imgur.com/33pk0Iw.jpeg'
+    about_us_img = 'https://i.imgur.com/70A4WdI.jpg'
 
     image_message = ImageSendMessage(
         original_content_url=about_us_img,
@@ -38,13 +39,14 @@ def about_us_event(event):
     line_bot_api.reply_message(
         event.reply_token,
         [text_message, sticker_message, image_message])
-    
+
+
 def location_event(event):
     location_message = LocationSendMessage(
         title='寶石服飾',
-        address='高雄市新興區文化路81號',
-        latitude=25.034563695,
-        longitude=121.5738839
+        address='高雄市左營區裕誠路338號',
+        latitude=22.66549,
+        longitude=120.306872
     )
 
     line_bot_api.reply_message(

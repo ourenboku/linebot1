@@ -1,14 +1,16 @@
+from flask import Flask, request , abort
+
 from linebot import (
     LineBotApi, WebhookHandler
 )
-from linebot.exceptions import(
+from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import (
-    MessageEvent, TextMessage, TextSendMessage, FollowEvent, UnfollowEvent, StickerSendMessage, ImageSendMessage, LocationSendMessage,FlexSendMessage,TemplateSendMessage,ImageCarouselTemplate,ImageCarouselColumn,PostbackAction,PostbackEvent
+    MessageEvent, TextMessage, TextSendMessage, FollowEvent, UnfollowEvent, StickerSendMessage, ImageSendMessage, LocationSendMessage,ImageCarouselTemplate,
+    ImageCarouselColumn, PostbackAction, TemplateSendMessage, FlexSendMessage ,ButtonsTemplate ,PostbackEvent ,QuickReplyButton
+    ,QuickReply , ConfirmTemplate ,MessageAction
 )
 
-# Channel access token
-line_bot_api = LineBotApi('Bt3t396iZROmq9J4tZRJelmiVuPen2S7qEPH53OWY8t6LtnWXjKYDnstsf2UgLRBcQgKQLXMt1GZUEkOSCaR6zA+g9g23xek/KL0TWituhFCyBqMIoWidcfOTTwaxMzrXbvEh5v66xCOyL50u5L/CQdB04t89/1O/w1cDnyilFU=')
-# Channel secret 
-handler = WebhookHandler('ce3610cc7e18921f9ba3219fea16f6ef')
+line_bot_api = LineBotApi('2aepdsvBi9LWxnKHG/2h4IJbqeVH+cqfZaXuDo6kdoc9co1RMVUEZIsPRccmxiXhReOIhqvsX/3fNeE8WBwsz3SmJiZYa7wz+DrQ2ZZfqwcLfI45V9jvZ6/tSlA2ATgL0jRjNIi3xbQAv9J4vJi+BgdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('1e2defcb69a9373f92833dc23efbeb58')
